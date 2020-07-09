@@ -223,7 +223,7 @@ var newExplicitLists = explicitList.toList() // Converts Iterable<E> to List<E>
 /// supported features, starting with forEach,map and where.
 var example9Array = const ["a", "b"];
 example9() {
-  for (final i = 0; i < example9Array.length; i++) {
+  for (int i = 0; i < example9Array.length; i++) {
     print("Example9 for loop '${example9Array[i]}'");
   }
   var i = 0;
@@ -693,7 +693,6 @@ example33() {
 /// Dart has also added feature such as Null aware operators
 var isBool = true;
 var hasString = isBool ?? "default String";
-var hasValue ??= "default Value";
 
 /// Programs have only one entry point in the main function.
 /// Nothing is expected to be executed on the outer scope before a program
